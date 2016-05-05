@@ -63,3 +63,4 @@ function clear() {
   xhttp.open("GET", "?cmd=clear", true);
   xhttp.send();
 }
+

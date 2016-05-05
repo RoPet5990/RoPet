@@ -53,6 +53,13 @@ ROOT_URLCONF = 'mysite.urls'
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
+STATICFILES_DIRS = (
+    os.path.join(os.path.dirname(__file__),'static'),
+)
+
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__),'templates'),
+)
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
@@ -63,17 +70,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-# Additional locations of static files
-STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-    os.path.join(
-        os.path.dirname(__file__),
-        'static',
-    ),
-)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/

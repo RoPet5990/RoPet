@@ -15,8 +15,9 @@ def post_list(request):
         if 'cmd' in request.GET and request.GET['cmd']:
             cmd = request.GET['cmd']
             
-            
+            print "in if cmd======="
             if cmd == 'forward':
+		print "in if forward======="
                 message = "get button forward"
                 motor_control('forward')
 
@@ -60,10 +61,4 @@ def post_list(request):
         
         t = get_template('blog/post_list.html')
         html = t.render(Context({'message':message}))
-        print "%s" %(url)
         return HttpResponse(html)
-    
-def post_css(request):
-    t_css = get_template('blog/post_css.css')
-    css = t_css.render()
-    return HttpResponse(css)

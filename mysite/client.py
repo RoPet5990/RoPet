@@ -6,13 +6,10 @@ import os
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(19,GPIO.OUT) #s1 left
 GPIO.setup(26,GPIO.OUT) #s2 right
-GPIO.setup(13,GPIO.OUT) #led
 s1 = GPIO.PWM(19,46.5)
 s2 = GPIO.PWM(26,46.5)
-l = GPIO.PWM(13,50)
 s1.start(0)
 s2.start(0)
-l.start(7)
 
 s1_speed = 7.0
 s2_speed = 7.0
@@ -58,24 +55,26 @@ def motor_control(cmd):
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(19,GPIO.OUT) #s1 left
         GPIO.setup(26,GPIO.OUT) #s2 right
-        GPIO.setup(13,GPIO.OUT) #led
         #s1 = GPIO.PWM(19,46.5)
         #s2 = GPIO.PWM(26,46.5)
         s1.start(0)
         s2.start(0)
-        l.start(7.0)
         print 'resume: s1 is %s, s2 is %s' %(s1_speed, s2_speed)
         
     if cmd == 'up':
-        
-        if (s1_speed > 7.0 and s1_speed <= 8.0):
+	if s1_speed == 7.0:
+	    s1_speed = 7.1        
+	if s2_speed == 7.0:
+            s2_speed = 6.9
+
+        if (s1_speed > 7.0 and s1_speed < 8.0):
             s1_speed += 0.1
-        elif (s1_speed < 7.0 and s1_speed >= 6.0):
+        elif (s1_speed < 7.0 and s1_speed > 6.0):
             s1_speed -= 0.1
             
-        if (s2_speed > 7.0 and s2_speed <= 8.0):
+        if (s2_speed > 7.0 and s2_speed < 8.0):
             s2_speed += 0.1
-        elif (s2_speed < 7.0 and s2_speed >= 6.0):
+        elif (s2_speed < 7.0 and s2_speed > 6.0):
             s2_speed -= 0.1
             
         s1.ChangeFrequency(50 - 0.5 * s1_speed)
@@ -86,14 +85,19 @@ def motor_control(cmd):
           
     if cmd == 'down':
         
-        if (s1_speed > 7.0 and s1_speed <= 8.0):
+	if s1_speed == 7.0:
+            s1_speed = 7.1
+        if s2_speed == 7.0:
+            s2_speed = 6.9
+
+        if (s1_speed > 7.0 and s1_speed < 8.0):
             s1_speed -= 0.1
-        elif (s1_speed < 7.0 and s1_speed >= 6.0):
+        elif (s1_speed < 7.0 and s1_speed > 6.0):
             s1_speed += 0.1
             
-        if (s2_speed > 7.0 and s2_speed <= 8.0):
+        if (s2_speed > 7.0 and s2_speed < 8.0):
             s2_speed -= 0.1
-        elif (s2_speed < 7.0 and s2_speed >= 6.0):
+        elif (s2_speed < 7.0 and s2_speed > 6.0):
             s2_speed += 0.1
             
         s1.ChangeFrequency(50 - 0.5 * s1_speed)
@@ -123,4 +127,4 @@ def motor_control(cmd):
         s2.ChangeDutyCycle(s2_speed)
             
         print 'backward: s1 is %s, s2 is %s' %(s1_speed, s2_speed)
-
+        

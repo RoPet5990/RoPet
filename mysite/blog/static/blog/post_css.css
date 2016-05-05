@@ -1,6 +1,6 @@
 body{
-    background: url(background.jpg) center;
-	background-attachment: fixed;
+    background: url("images/background.jpg") center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
@@ -84,6 +84,7 @@ button{
 }
 
 .idle:hover{
+    cursor:pointer;
     background-color: bisque;
     font-weight: bolder;
 }
@@ -456,5 +457,6 @@ ul.list li{
     font-size: 100%;
 }
 }
+
 
 
