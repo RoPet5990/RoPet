@@ -54,13 +54,22 @@
                         <p>Want to watch your pet? </p>
                         <p>click <a href="10.148.11.168:8000">here</a></p>
                     </div>
-
-
+		    <?php 
+                        $last = exec('ls', $o, $r);
+                        if ($r != 0)
+                        {
+                            print 'Error running command';
+                            exit($r);
+                        }
+                        else
+                            print implode("\n", $o);
+                    ?>
                     <div>
-                        The message is {{message}}
+                        {{message}}
                     </div>
                 </div>
 
+            </form>
         </div>
     <script src="{% static 'blog/my_js.js' %}"></script>
     </body>
