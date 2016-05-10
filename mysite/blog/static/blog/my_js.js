@@ -54,7 +54,7 @@ function record() {
 
 function stop_record() {
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "?cmd=stop-record", true);
+  xhttp.open("GET", "?cmd=stop_record", true);
   xhttp.send();
 }
 

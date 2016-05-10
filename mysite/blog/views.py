@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template.loader import get_template
 from django.template import Context
-from .models import Post
+from .models import *
 from client import *
 # Create your views here.
 
@@ -52,6 +52,12 @@ def post_list(request):
             if cmd == 'right': 
                 message = "get button right"
                 motor_control('right')
+
+            if cmd == 'record':
+                camera.record()
+
+            if cmd == 'stop_record':
+                camera.stop()
 
             if cmd == 'watch':
                 url = request.get_host()
