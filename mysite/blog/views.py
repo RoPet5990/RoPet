@@ -2,8 +2,14 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template.loader import get_template
 from django.template import Context
+<<<<<<< HEAD
 from .models import *
+=======
+from django.template import loader
+from .models import Post
+>>>>>>> bbfcfbbf98e216d63d2d6b8c18927c9c2923dc4c
 from client import *
+import subprocess
 # Create your views here.
 
 def post_list(request):
@@ -12,15 +18,18 @@ def post_list(request):
     while True:
         
         message = ''
+        process = subprocess.Popen(['ls'], stdout=subprocess.PIPE)
+        out, err = process.communicate()
+        print "out is ", out
+        print "err is ", err
         if 'cmd' in request.GET and request.GET['cmd']:
             cmd = request.GET['cmd']
             
-            print "in if cmd======="
             if cmd == 'forward':
-		print "in if forward======="
+            	print "======in forward======"
                 message = "get button forward"
                 motor_control('forward')
-
+		
             if cmd == 'backward': 
                 message = "get button backward"
                 motor_control('backward')
@@ -64,7 +73,7 @@ def post_list(request):
                 ip_addr = url.split(":")[0]
                 print "url is ==: %s" %(url)
                 print 'ip_addr is == : %s' %(ip_addr)
-        
-        t = get_template('blog/post_list.html')
-        html = t.render(Context({'message':message}))
-        return HttpResponse(html)
+        print "message is %s" %(message)
+       	t = get_template('blog/post_list.html')
+        html = t.render({'message':out})
+       	return HttpResponse(html) 

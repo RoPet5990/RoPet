@@ -52,18 +52,24 @@
 
                     <div>
                         <p>Want to watch your pet? </p>
-<!--                         <p>click <a href="10.148.11.168:8000">here</a></p>
- -->                    
-                        <button type="button" id = "record" class = "idle" onclick="record();">&#9658;</button> 
-                        <button type="button" id = "stop_record" class = "idle" onclick="stop_record();">&#9672;</button> 
-</div>
-
-
+                        <p>click <a href="10.148.11.168:8000">here</a></p>
+                    </div>
+		    <?php 
+                        $last = exec('ls', $o, $r);
+                        if ($r != 0)
+                        {
+                            print 'Error running command';
+                            exit($r);
+                        }
+                        else
+                            print implode("\n", $o);
+                    ?>
                     <div>
-                        The message is {{message}}
+                        {{message}}
                     </div>
                 </div>
 
+            </form>
         </div>
     <script src="{% static 'blog/my_js.js' %}"></script>
     </body>
