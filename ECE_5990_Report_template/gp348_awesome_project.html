@@ -8,51 +8,51 @@ Template for
 <html>
 <head>
 
-	<title>ECE 5990 | Awesome Project </title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ECE 5990 | RoPet </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<meta name="keywords" content="Gautham Ponnu, awesome, project" />
-	<meta name="description" content="This webpage is gp348 awesome project report for ECE 5990 at Cornell University" />
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="CSS/report.css" media="all" />
-	<link rel="stylesheet" href="CSS/project.css" type="text/css" media="screen, projection" />
+    <meta name="keywords" content="Gautham Ponnu, awesome, project" />
+    <meta name="description" content="This webpage is gp348 awesome project report for ECE 5990 at Cornell University" />
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="CSS/report.css" media="all" />
+    <link rel="stylesheet" href="CSS/project.css" type="text/css" media="screen, projection" />
 </head>
 <body>
 
 <div id="doc2" class="yui-t7">
-	<div id="inner">
-		<div id="hd">
-			<div class="yui-gc">
-				<div class="yui-u first">
-					<h1>RoPet</h1>
-					<h2>Mengqiao Li, Bingyu Wang</h2>
-				</div>
+    <div id="inner">
+        <div id="hd">
+            <div class="yui-gc">
+                <div class="yui-u first">
+                    <h1>RoPet</h1>
+                    <h2>Mengqiao Li, Bingyu Wang</h2>
+                </div>
 
-			</div><!--// .yui-gc -->
-		</div><!--// hd -->
+            </div><!--// .yui-gc -->
+        </div><!--// hd -->
 
-		<div id="bd"> <!--// Main Body begins here -->
-			<div id="yui-main">
-				<div class="yui-b">
+        <div id="bd"> <!--// Main Body begins here -->
+            <div id="yui-main">
+                <div class="yui-b">
 
 
-						<div class="yui-gf"> <!--// This is a section -->
-							<div class="yui-u first">
-								<h2>Introduction</h2> <!--// put your heading here -->
-							</div>
-							<div class="yui-u">
-								<p>Nowadays, more and more people would like to keep a pet at their home. According to the 2015-2016 National Pet Owners Survey conducted by the American Pet Products Association (APPA), as of 2016 It's estimated that 70-80 million dogs and 74-96 million cats are owned in the United States. Approximately 37-47% of all households in the United States have a dog, and 30-37% have a cat. Sixty-five percent of U.S. households, or about 79.7 million families, own a pet. They treat their pets as their friends, even members of their family. Therefore, most owners are carious about their pets’ timely behavior when they are not at home. Out of this purpose, we planned to design a robot as our final project for those pet owners to supervisor their no matter where they are. 
+                        <div class="yui-gf"> <!--// This is a section -->
+                            <div class="yui-u first">
+                                <h2>Introduction</h2> <!--// put your heading here -->
+                            </div>
+                            <div class="yui-u">
+                                <p>Nowadays, more and more people would like to keep a pet at their home. According to the 2015-2016 National Pet Owners Survey conducted by the American Pet Products Association (APPA), as of 2016 It's estimated that 70-80 million dogs and 74-96 million cats are owned in the United States. Approximately 37-47% of all households in the United States have a dog, and 30-37% have a cat. Sixty-five percent of U.S. households, or about 79.7 million families, own a pet. They treat their pets as their friends, even members of their family. Therefore, most owners are carious about their pets’ timely behavior when they are not at home. Out of this purpose, we planned to design a robot as our final project for those pet owners to supervisor their no matter where they are. 
 
-								</p> <!--// Put Content here -->
-							</div>
-						</div><!--// Your section has ended -->
+                                </p> <!--// Put Content here -->
+                            </div>
+                        </div><!--// Your section has ended -->
 
-						<div class="yui-gf"> <!--// This is another section -->
-							<div class="yui-u first">
-								<h2>Objective</h2> <!--// put your heading here -->
-							</div>
-							<div class="yui-u">
-								<p>
+                        <div class="yui-gf"> <!--// This is another section -->
+                            <div class="yui-u first">
+                                <h2>Objective</h2> <!--// put your heading here -->
+                            </div>
+                            <div class="yui-u">
+                                <p>
                                     This project mainly focused on the following problems:
                                     <ul>
                                         <li>Programming Raspberry Pi through a web application framework</li>
@@ -61,22 +61,22 @@ Template for
                                         <li>Creating an algorithm that enables RPi automatic tracing using bluetooth low energy </li>
                                         <li>Implementing face recognition in the tracing algorithm</li>
                                     </ul>
-								</p> <!--// Put Content here -->
-							</div>
-						</div><!--// Your section has ended -->
+                                </p> <!--// Put Content here -->
+                            </div>
+                        </div><!--// Your section has ended -->
 
-						<div class="yui-gf"> <!--// This is a section -->
-							<div class="yui-u first">
-								<h2>Design</h2> <!--// put your heading here -->
-							</div>
-							<div class="yui-u">
-								<p>We separated the whole project into five parts: website design, remote control, camera recording, Bluetooth searching, and face recognition. We will introduce every part in details as follows.
-								</p> <!--// Put Content here -->
+                        <div class="yui-gf"> <!--// This is a section -->
+                            <div class="yui-u first">
+                                <h2>Design</h2> <!--// put your heading here -->
+                            </div>
+                            <div class="yui-u">
+                                <p>We separated the whole project into five parts: website design, remote control, camera recording, Bluetooth searching, and face recognition. We will introduce every part in details as follows.
+                                </p> <!--// Put Content here -->
                                 <h3>Website Design</h3>
                                 <p>
                                     The basic website was written in HTML, adding some styles with CSS. Since the main window clients will interact with is the website, we tried to make it more beautiful, practical, and humanized. We screenshot the website in figure 1. There are two kinds of buttons in this page, motor control buttons and camera & Bluetooth buttons. The former ones are used to remotely control the robot moving around. There are 9 buttons in total: forward, backward, turn left, turn right, pause, speed up, speed down, quit, and restart. The latter ones are respectively used to open the camera, recording real-time video, and start search for pets. Another function is when hovering on or click a certain button, the button color will turn darken(like the ‘turn left’ button in this picture) which could indicate which button has already been pressed, in order to tell the current state of the robot. 
                                 </p>
-                                <img src="images/website.png" title="website" alt="This is a website screenshot" width="420" height="250"/>
+                                <img src="images/website.png" title="website" alt="This is a website screenshot" width="560" height="600"/>
                                 <h3>Remote Control</h3>
                                 <p>
                                     To realize remote control, we used Django as the previous project in last semester. Django framework use Model View Template(MVT) to construct the database. The model layer is an abstraction lay for structuring and manipulating the data of your web application. The view layer encapsulates the logic responsible for processing a user’s Http response and request, and also render the HTML page to display in the website. The template is a container for all the files needed to display the webpages, like HTML files, CSS files, JavaScript files, JQuery files, etc. In our project, we referenced the JavaScript part (only my_js.js file) from the previous project, which defined all the control functions. Once the users click a button, the related function will be called and pass a ‘cmd’ variable to view.py. Once the user’s request is received by the view layer, it will call a specific function in the server to control the robot to do different behavior. 
@@ -85,7 +85,7 @@ Template for
                                 <h3>Video Record</h3>
                                 
                                 <p>
-                                    RoPet is designed to allow pet owners to watch how their pets behave when their pets are unsupervised, therefore, real time video streaming is required for this project. After attaching a Raspberry Pi camera module to the RPi board, we installed the picamera software library on Raspberry Pi. Picamera is a package which provides a native Python interface to the Raspberry Pi camera module for Python 2.7 (or above). Using the socket and picamera interface, we implemented a program in which RPi acts as a server. When the RPi accepts a connection from a client, it starts streaming video for a 60 second time period.  The stream can be viewed through the vlc media player by providing a network URL which is something like this:<a href="tcp/h264://my_pi_address:8000/">tcp/h264://my_pi_address:8000/</a>
+                                    RoPet is designed to allow pet owners to watch how their pets behave when their pets are unsupervised, therefore, real time video streaming is required for this project. After attaching a Raspberry Pi camera module to the RPi board, we installed the picamera software library on Raspberry Pi. Picamera is a package which provides a native Python interface to the Raspberry Pi camera module for Python 2.7 (or above). Using the socket and picamera interface, we implemented a program in which RPi acts as a server. When the RPi accepts a connection from a client, it starts streaming video for a 60 second time period.  The stream can be viewed through the vlc media player by providing a network URL which is something like this: tcp/h264://my_pi_address:8000/
                                 </p>
                                 <h3>Searching Algothrim</h3>
                                 <p>In order to find the Bluetooth tag, the position where the strongest RSSI is received should be found at first because this position identify the direction of Bluetooth tag. Afterwards, the robot will follow this direction to find the tag under the help of picamera. Once the face is found, the robot will stop and quit the whole program; otherwise, start for a second search. We designed two algothrim to search the tag: Circle Algothrim and Line Algothrim</p>
@@ -105,8 +105,10 @@ Template for
                                     In the ‘RUN’ state, the robot will run several segments while calculating the RSSI to find the position of ideal RSSI value. Once it finds this position, it will turn around and try to find pet face. If it does find a pet face, stop and quit this problem; otherwise, enter ‘wait’ state to make a second search.
                                 </p>
                                 
+
                                 
-                                <img src="images/activityDiagram.png" title="activity" alt="This is a picture" width="400" height="1000"/>
+                                <img src="images/activityDiagram.png" title="activity" alt="This is a picture" width="250" height="565"/>
+
                                 <span>2. Linear Searching Algothrim</span>
                                 <p>
                                     Another possible algorithm for the robot to find the pet is searching by line. Given an original position where RoPet starts searching, it calculates the rssi value at the origin. Then it goes a straight line and stops every unit time. Each time it stops, it calculates the RSSI at that position. After this, there will be three possible outcomes:
@@ -138,15 +140,15 @@ Template for
                                 </p>
                                 
                                 
-							</div>
-						</div><!--// Your section has ended -->
+                            </div>
+                        </div><!--// Your section has ended -->
 
-						<div class="yui-gf"> <!--// This is a section -->
-							<div class="yui-u first">
-								<h2>Testing</h2> <!--// put your heading here -->
-							</div>
-							<div class="yui-u">
-								<h3>Bluetooth</h3>
+                        <div class="yui-gf"> <!--// This is a section -->
+                            <div class="yui-u first">
+                                <h2>Testing</h2> <!--// put your heading here -->
+                            </div>
+                            <div class="yui-u">
+                                <h3>Bluetooth</h3>
                                 <p>
                                     To gain the range of RSSI values, we made some tests and recorded the results in the following graph. 
                                 </p>
@@ -176,79 +178,79 @@ The third one is in the second phase. Our first idea was after the maximum value
                                     Since the non-linear relationship between RSSI value and distance, RSSI values on a line may lead RoPet to an entirely wrong direction. We solved this problem by increasing the length of unit line segment RoPet goes according to the RSSI-Distance chart. But the drawback of this solution is that there should be enough space for RoPet to run a long straight line. 
                                 </p>
                                 
-							</div>
-						</div><!--// Your section has ended -->
+                            </div>
+                        </div><!--// Your section has ended -->
 
-						
-						<div class="yui-gf"> <!--// This is a section -->
-							<div class="yui-u first">
-								<h2>Results</h2> <!--// put your heading here -->
-							</div>
-							<div class="yui-u">
-								<p>Each objective has been achieved. Specifically, users can control RoPet (our robot built on top of Raspberry Pi) through a fancy website that we made from scratch; ask RoPet to start searching for their pet by clicking a button on the web page, start supervising the pet after searching, and remotely “drive” the robot by using the control panel on the web page.
-								</p> <!--// Put Content here -->
-							</div>
-						</div><!--// Your section has ended -->
+                        
+                        <div class="yui-gf"> <!--// This is a section -->
+                            <div class="yui-u first">
+                                <h2>Results</h2> <!--// put your heading here -->
+                            </div>
+                            <div class="yui-u">
+                                <p>Each objective has been achieved. Specifically, users can control RoPet (our robot built on top of Raspberry Pi) through a fancy website that we made from scratch; ask RoPet to start searching for their pet by clicking a button on the web page, start supervising the pet after searching, and remotely “drive” the robot by using the control panel on the web page.
+                                </p> <!--// Put Content here -->
+                            </div>
+                        </div><!--// Your section has ended -->
 
-						<div class="yui-gf"> <!--// This is a section -->
-							<div class="yui-u first">
-								<h2>Future Scope</h2> <!--// put your heading here -->
-							</div>
-							<div class="yui-u">
-								<p>The biggest problem we are facing right now is the mechanical issue caused by the motor. The two servos could not keep stable because of the unstable voltage. Therefore, the robot sometimes won’t run in the same circle even we have succeed for several times before. To fix this problem, we plan to use short-range digital distance sensors to compensate the speed difference between two motors.
-								</p> <!--// Put Content here -->
-							</div>
-						</div><!--// Your section has ended -->
+                        <div class="yui-gf"> <!--// This is a section -->
+                            <div class="yui-u first">
+                                <h2>Future Scope</h2> <!--// put your heading here -->
+                            </div>
+                            <div class="yui-u">
+                                <p>The biggest problem we are facing right now is the mechanical issue caused by the motor. The two servos could not keep stable because of the unstable voltage. Therefore, the robot sometimes won’t run in the same circle even we have succeed for several times before. To fix this problem, we plan to use short-range digital distance sensors to compensate the speed difference between two motors.
+                                </p> <!--// Put Content here -->
+                            </div>
+                        </div><!--// Your section has ended -->
 
-						<div class="yui-gf"> <!--// This is a section -->
-							<div class="yui-u first">
-								<h2>Acknowledgement</h2> <!--// put your heading here -->
-							</div>
-							<div class="yui-u">
-								<p>We would like to thank Professor Skovira for not only his great advice and lectures but also being open-minded and helpful all the time. We also appreciate the help from TAs including Gautham, Jacob and Jingyao throughout this semester. ECE5990 2016 Spring staff really provided us with an amazing course experience and beautiful memory at Cornell. Additionally, we would like to thank Victor Fei, Liwei Han and Alex Tan for their help of the use of Django.
-								</p> <!--// Put Content here -->
-							</div>
-						</div><!--// Your section has ended -->
+                        <div class="yui-gf"> <!--// This is a section -->
+                            <div class="yui-u first">
+                                <h2>Acknowledgement</h2> <!--// put your heading here -->
+                            </div>
+                            <div class="yui-u">
+                                <p>We would like to thank Professor Skovira for not only his great advice and lectures but also being open-minded and helpful all the time. We also appreciate the help from TAs including Gautham, Jacob and Jingyao throughout this semester. ECE5990 2016 Spring staff really provided us with an amazing course experience and beautiful memory at Cornell. Additionally, we would like to thank Victor Fei, Liwei Han and Alex Tan for their help of the use of Django.
+                                </p> <!--// Put Content here -->
+                            </div>
+                        </div><!--// Your section has ended -->
 
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Code Appendix</h2>
-						</div>
-							<div class="yui-u">
-							<!-- This is a good idea. HTML generated using hilite.me -->
-							<a href="https://github.com/RoPet5990/RoPet">Code link on GitHub</a>
+                    <div class="yui-gf">
+                        <div class="yui-u first">
+                            <h2>Code Appendix</h2>
+                        </div>
+                            <div class="yui-u">
+                            <!-- This is a good idea. HTML generated using hilite.me -->
+                            <a href="https://github.com/RoPet5990/RoPet">Code link on GitHub</a>
 
-						</div>
-					</div>
-					</div>
+                        </div>
+                    </div>
+                    </div>
 
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Contact</h2>
-						</div>
-						<div class="yui-u">
-						<p> Mengqiao Li(ml2439@cornell.edu), Bingyu Wang(bw479@cornell.edu) </p>
-						</div>
-					</div>
-					</div>
+                    <div class="yui-gf">
+                        <div class="yui-u first">
+                            <h2>Contact</h2>
+                        </div>
+                        <div class="yui-u">
+                        <p> Mengqiao Li(ml2439@cornell.edu), Bingyu Wang(bw479@cornell.edu) </p>
+                        </div>
+                    </div>
+                    </div>
 
-				</div><!--// .yui-b -->
-			</div><!--// yui-main -->
-		</div><!--// bd -->
+                </div><!--// .yui-b -->
+            </div><!--// yui-main -->
+        </div><!--// bd -->
 
-		<div id="ft">
-			<p><a href="http://validator.w3.org/check?uri=referer"><img src=
-			"images/w3chatered.gif" title="W3C+Hates+Me" alt="W3C+Hates+Me"
-			width="80" height="15" /></a>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src=
-			"images/css_copy.gif" title="Valid+CSS%21" alt="Valid+CSS%21"
-			width="80" height="15" /></a>
-			<img src="images/code.gif" title="Handcrafted with sweat and blood" alt="Handcrafted with sweat and blood" width="80" height="15" />
-			<img src="images/anybrowser.gif" title="Run Any Browser Any OS" alt="Runs on Any Browser Any OS" width="80" height="15" /></p>
-			<br />
-		</div><!--// footer -->
+        <div id="ft">
+            <p><a href="http://validator.w3.org/check?uri=referer"><img src=
+            "images/w3chatered.gif" title="W3C+Hates+Me" alt="W3C+Hates+Me"
+            width="80" height="15" /></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src=
+            "images/css_copy.gif" title="Valid+CSS%21" alt="Valid+CSS%21"
+            width="80" height="15" /></a>
+            <img src="images/code.gif" title="Handcrafted with sweat and blood" alt="Handcrafted with sweat and blood" width="80" height="15" />
+            <img src="images/anybrowser.gif" title="Run Any Browser Any OS" alt="Runs on Any Browser Any OS" width="80" height="15" /></p>
+            <br />
+        </div><!--// footer -->
 
-	</div><!-- // inner -->
+    </div><!-- // inner -->
 
 
 </div><!--// doc -->
