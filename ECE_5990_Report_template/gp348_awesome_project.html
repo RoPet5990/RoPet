@@ -94,6 +94,7 @@ Template for
                                 <p>
                                     To reduce the corner cases, firstly we tried a circle algorithm to find the Bluetooth position. Here, we defined four states to describe the current task for the robot, that is, ‘READY’, ‘WAIT’, WEARCH’, ‘RUN’. 
                                 </p>
+                                <img src="images/circle_Fotor.jpg" title="circle" alt="This is a picture" width="400" height="500"/>
                                 <p>
                                     For the ‘ready’, the robot will stay still at its initial point to calculate the current RSSI value. Once it gains a valid RSSI value, it will turn to ‘WAIT’ state. Under this state, a second RSSI value will be calculated again in order to be compared with the previous one in ‘READY’ state. Afterwards, two different situations may happen. The first one is that the current RSSI value is bigger than the previous one. In this case, we assume the pet is currently approaching the robot since the Bluetooth signal is becoming stronger. Then the robot just stays still to wait for the pet. In other words, the system will enter ‘WAIT’ state again to calculate another RSSI value and compare again. The other situation is the current RSSI is smaller than the previous, which means the pet is moving further from the robot. Then the robot will decide to find the pet by itself by entering ‘SEARCH’ state.
                                 </p>
@@ -104,7 +105,7 @@ Template for
                                     In the ‘RUN’ state, the robot will run several segments while calculating the RSSI to find the position of ideal RSSI value. Once it finds this position, it will turn around and try to find pet face. If it does find a pet face, stop and quit this problem; otherwise, enter ‘wait’ state to make a second search.
                                 </p>
                                 
-                                <img src="images/circle.jpg" title="circle" alt="This is a picture" width="400" height="500"/>
+                                
                                 <img src="images/activityDiagram.png" title="activity" alt="This is a picture" width="400" height="1000"/>
                                 <span>2. Linear Searching Algothrim</span>
                                 <p>
@@ -121,16 +122,16 @@ Template for
                                 <p>
                                     The first scenario happens when RPi is getting closer to the pet while it moves. So the point where it stops is where we get the greatest rssi on this line. If this maximum rssi is greater than or equal to a critical rssi value which indicates the distance is close enough for RoPet to see the pet, it goes to “turn and find” mode in which RoPet rotates and stops when the camera sees a pet. If the maximum rssi value is smaller than the critical value, it will restart linear searching by taking the current position as the origin.
                                 </p>
-                                <img src="images/linecloser.jpg" title="closer" alt="This is a picture" width="560" height="500"/>
+                                <img src="images/linecloser_Fotor.jpg" title="closer" alt="This is a picture" width="560" height="260"/>
                                 <p>
                                     The second possibility is that RPi gets farther to the pet. In this case, after going a line on which rssi continuously decreases, RoPet goes backwards to its original position and starts searching in the opposite direction.
                                 </p>
-                                <img src="images/linefurther.jpg" title="further" alt="This is a picture" width="560" height="500"/>
+                                <img src="images/linefurther_Fotor.jpg" title="further" alt="This is a picture" width="560" height="260"/>
                                 <p>
                                     The third case is that the pet is somewhere next to the line. We can trace the pet by making a perpendicular from the point of the line where maximum rssi value locates. Since the pet can be on either side, we set a default direction, say letting RoPet turn left, then go straight for one unit time, calculate rssi, compare it with the maximum rssi value, and if the current rssi is greater, it means that we are in the correct direction. Otherwise turn around and search the other side. Once the correct direction is found, we repeat linear searching and this will lead us to the first case.
 
                                 </p>
-                                <img src="images/linemax.jpg" title="max" alt="This is a picture" width="560" height="500"/>
+                                <img src="images/linemax_Fotor.jpg" title="max" alt="This is a picture" width="560" height="500"/>
                                 <h3>Face recognition</h3>
                                 <p>
                                     In order to find the pet as soon as possible, we implemented face recognition technique so that RoPet can look around and decide the correct direction of the pet from a reasonable distance. This is realized by utilizing opencv and picamera packages, plus a face pattern file from the internet.
@@ -149,7 +150,7 @@ Template for
                                 <p>
                                     To gain the range of RSSI values, we made some tests and recorded the results in the following graph. 
                                 </p>
-                                <img src="images/rssi.png" title="rssi chart" alt="rssi chart" width="420" height="200"/>
+                                <img src="images/rssi.png" title="rssi chart" alt="rssi chart" width="420" height="250"/>
                                 <p>
                                     We use the length of table as a unit. When using ½ table, the value is not much accurate because the value in a further position could be smaller than that in a closer position. But with 1 table unit, the value changes linearly. Also we got the ideal RSSI as about -62, which is about 2-3 feet from the bluetooth tag. One big problem we faced was that the RSSI value was not linearly correlated with the distance from BLE and the receptor. Also it can vary a lot even if everyone is on their original position. In order to compensate this problem, we made the robot stop for 15 seconds to get enough RSSI values and removed the greatest and least value from the RSSI list before calculate the mean RSSI value.
                                 </p>
