@@ -90,7 +90,7 @@ Template for
                                 <h3>Searching Algothrim</h3>
                                 <p>In order to find the Bluetooth tag, the position where the strongest RSSI is received should be found at first because this position identify the direction of Bluetooth tag. Afterwards, the robot will follow this direction to find the tag under the help of picamera. Once the face is found, the robot will stop and quit the whole program; otherwise, start for a second search. We designed two algothrim to search the tag: Circle Algothrim and Line Algothrim</p>
                                 
-                                <span>1. Circle Algothrim</span>
+                                <span>1. Circular Searching Algothrim</span>
                                 <p>
                                     To reduce the corner cases, firstly we tried a circle algorithm to find the Bluetooth position. Here, we defined four states to describe the current task for the robot, that is, ‘READY’, ‘WAIT’, WEARCH’, ‘RUN’. 
                                 </p>
@@ -106,7 +106,7 @@ Template for
                                 
                                 <img src="images/circle.jpg" title="circle" alt="This is a picture" width="350" height="500"/>
                                 <img src="images/activityDiagram.jpg" title="activity" alt="This is a picture" width="350" height="1000"/>
-                                <span>Line Algothrim</span>
+                                <span>2. Linear Searching Algothrim</span>
                                 <p>
                                     Another possible algorithm for the robot to find the pet is searching by line. Given an original position where RoPet starts searching, it calculates the rssi value at the origin. Then it goes a straight line and stops every unit time. Each time it stops, it calculates the RSSI at that position. After this, there will be three possible outcomes:
 
@@ -130,11 +130,12 @@ Template for
                                     The third case is that the pet is somewhere next to the line. We can trace the pet by making a perpendicular from the point of the line where maximum rssi value locates. Since the pet can be on either side, we set a default direction, say letting RoPet turn left, then go straight for one unit time, calculate rssi, compare it with the maximum rssi value, and if the current rssi is greater, it means that we are in the correct direction. Otherwise turn around and search the other side. Once the correct direction is found, we repeat linear searching and this will lead us to the first case.
 
                                 </p>
+                                <img src="images/linemax.jpg" title="max" alt="This is a picture" width="500" height="500"/>
                                 <h3>Face recognition</h3>
                                 <p>
                                     In order to find the pet as soon as possible, we implemented face recognition technique so that RoPet can look around and decide the correct direction of the pet from a reasonable distance. This is realized by utilizing opencv and picamera packages, plus a face pattern file from the internet.
                                 </p>
-                                <img src="images/linemax.jpg" title="max" alt="This is a picture" width="500" height="500"/>
+                                
                                 
 							</div>
 						</div><!--// Your section has ended -->
