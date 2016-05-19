@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    
+    <body>
+        
+        <form action="" method="get">
+            <p>Hi there!</p>
+            <p>it works</p>
+            {{posts}}
+            {% for post in posts %}
+                {{post}}
+            {% endfor %}
+            {% for post in posts %}
+                <div>
+                    <p>published date:{{post.published_date}}</p>
+                    <h1><a href="">{{post.title}}</a></h1>
+                </div>
+            {% endfor %}
+            <div>
+                <p>button test:</p>
+                <input type="submit" name = 'forward' value = '&#8678'/>
+                <input type="submit" name = 'backward' value = 'BACKWARD'/>
+                <input type="submit" name = 'stop' value = 'STOP'/>
+                <input type="submit" name = 'quit' value = 'QUIT'/>
+		<input type="submit" name = 'resume' value = 'RESUME'/>
+	        <input type="submit" name = 'speed_up' value = 'SPEED UP'/>
+                <input type="submit" name = 'speed_down' value = 'SPEED DOWN'/>
+		<input type="submit" name = 'left' value = 'LEFT'/>
+                <input type="submit" name = 'right' value = 'RIGHT'/>
+		<input type="submit" name = 'watch' value = 'WATCH'/>
+	    </div>
+
+
+            <div>
+                {{message}}
+            </div>
+	    <div>
+		<p>Want to watch your pet?</p>
+		<p>Click <a href="10.148.11.168:8000">here</a></p>
+           
+        </form>
+    </body>
+	
+    
+</html> 

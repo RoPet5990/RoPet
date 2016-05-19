@@ -1,0 +1,92 @@
+<html>
+{% load staticfiles %}
+    <head>
+        <meta charset="utf-8">
+        <title>ECE5990</title>
+        <link type="text/css" rel="stylesheet" href="{% static 'blog/post_css.css' %}">
+    </head>
+    
+    <body>
+        <div id="wrapper">
+    <!--
+                <p>Hi there!</p>
+                <p>it works</p>
+                {{posts}}
+                {% for post in posts %}
+                    {{post}}
+                {% endfor %}
+                {% for post in posts %}
+                    <div>
+                        <p>published date:{{post.published_date}}</p>
+                        <h1><a href="">{{post.title}}</a></h1>
+                    </div>
+                {% endfor %}
+    -->
+                <a href="#"><header id="ropet">E C E 5 9 9 0</header></a>
+                
+                <h1>RoPet</h1>
+                
+                <div id="content">
+                    <div id="text1">
+                        <div class = "intro">
+                            Would like to watch your dog remotely? 
+                        </div>
+                        <div class = "intro">
+                            Join with RoPet and have fun!
+                        </div>
+                    </div>
+                    
+                    <div id = "control">
+                        <h2>&#10048;    Control Panel</h2>
+                        <div id="control_icon">
+                            <div id = "first">
+                                <a><input type="submit" id = "forward" class = "idle" name = 'forward' value = &#8679;></a>
+                                <a><input type="submit" id = "up" class = "idle" name = 'speed_up' value = &and;></a>
+                            </div>
+
+                            <div id="second">
+                                <a><input type="submit" id = "left" class = "idle" name = 'left' value = &#8678;></a> 
+                                <a><input type="submit" id = "stop" class = "idle" name = 'stop' value = "| |"></a>
+                                <a><input type="submit" id = "right" class = "idle" name = 'right' value = &#8680;></a>
+                            </div>
+
+                            <div id="thrid">
+                                <a><input type="submit" id = "backward" class = "idle" name = 'backward' value = &#8681;></a>
+                                <a><input type="submit" id = "down" class = "idle" name = 'speed_down' value = &or;></a>
+                            </div>
+
+                            <div id="fourth">
+                                <a><input type="submit" id = "start" class = "idle" name = 'start' value = &#8634;></a>
+                                <a><input type="submit" id = "quit" class = "idle" name = 'quit' value = &#9635;></a>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div>
+                        <p>Want to watch your pet? </p>
+                        <p>click <a href="10.148.11.168:8000">here</a></p>
+                    </div>
+
+
+                    <div>
+                        {{message}}
+                    </div>
+                </div>
+
+        </div>
+    </body>
+	
+    
+</html> 
+

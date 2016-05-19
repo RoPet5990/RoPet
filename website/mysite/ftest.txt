@@ -1,0 +1,16 @@
+HCI sniffer - Bluetooth packet analyzer ver 5.23
+device: hci0 snap_len: 1500 filter: 0xffffffff
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -80
+> HCI Event: LE Meta Event (0x3e) plen 40
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE 4DE6'
+      RSSI: -80

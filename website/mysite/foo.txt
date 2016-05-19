@@ -1,0 +1,500 @@
+HCI sniffer - Bluetooth packet analyzer ver 5.23
+device: hci0 snap_len: 1500 filter: 0xffffffff
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -65
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -65
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 7C:E9:D3:EA:1E:D8 mode 1 clkoffset 0x6713 class 0x3e010c rssi -90
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -65
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -65
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 7C:E9:D3:EA:1E:D8 mode 1 clkoffset 0x6715 class 0x3e010c rssi -81
+    Complete local name: 'EN-EC-SPLG27-D'
+    TX power level: 0
+    Shortened service classes: 0x110b 0x1124
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -65
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -62
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -66
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -66
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -65
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -62
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -62
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -59
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -61
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 6C:40:08:8A:03:FB mode 1 clkoffset 0x68b9 class 0x3a010c rssi -74
+    Complete local name: 'Andrew...s MacBook Pro'
+    Complete service classes: 0x1101 0x1200 0x111f 0x1112 0x1116 0x1117 0x110a 0x110c
+    Unknown type 0xff with 17 bytes data
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -63
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 7C:E9:D3:EA:1E:D8 mode 1 clkoffset 0x671b class 0x3e010c rssi -84
+    Complete local name: 'EN-EC-SPLG27-D'
+    TX power level: 0
+    Shortened service classes: 0x110b 0x1124
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 5C:E0:C5:F3:67:5D mode 1 clkoffset 0x7182 class 0x02010c rssi -73
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 6C:40:08:8A:03:FB mode 1 clkoffset 0x68b3 class 0x3a010c rssi -78
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -63
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 5C:E0:C5:F3:67:5D mode 1 clkoffset 0x7183 class 0x02010c rssi -64
+    Complete local name: 'SISSEL'
+    TX power level: 10
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -64
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 5C:E0:C5:F3:67:5D mode 1 clkoffset 0x7183 class 0x02010c rssi -54
+    Complete local name: 'SISSEL'
+    TX power level: 10
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -67
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -66
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -67
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -67
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 5C:E0:C5:F3:67:5D mode 1 clkoffset 0x7182 class 0x02010c rssi -54
+    Complete local name: 'SISSEL'
+    TX power level: 10
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -66
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -66
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -66
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -67
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -64
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -64
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 7C:E9:D3:EA:1E:D8 mode 1 clkoffset 0x6722 class 0x3e010c rssi -81
+    Complete local name: 'EN-EC-SPLG27-D'
+    TX power level: 0
+    Shortened service classes: 0x110b 0x1124
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -68
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -65
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -64
+< HCI Command: LE Set Scan Enable (0x08|0x000c) plen 2
+    value 0x00 (scanning disabled)
+    filter duplicates 0x00 (disabled)
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Enable (0x08|0x000c) ncmd 1
+    status 0x00
+> HCI Event: Inquiry Complete (0x01) plen 1
+    status 0x00
+< HCI Command: LE Set Random Address (0x08|0x0005) plen 6
+    bdaddr 16:2D:2F:90:FE:F4
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Random Address (0x08|0x0005) ncmd 1
+    status 0x00
+< HCI Command: LE Set Scan Parameters (0x08|0x000b) plen 7
+    type 0x01 (active)
+    interval 22.500ms window 11.250ms
+    own address: 0x01 (Random) policy: All
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Parameters (0x08|0x000b) ncmd 1
+    status 0x00
+< HCI Command: LE Set Scan Enable (0x08|0x000c) plen 2
+    value 0x01 (scanning enabled)
+    filter duplicates 0x01 (enabled)
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Enable (0x08|0x000c) ncmd 1
+    status 0x00
+< HCI Command: Inquiry (0x01|0x0001) plen 5
+    lap 0x9e8b33 len 8 num 0
+> HCI Event: Command Status (0x0f) plen 4
+    Inquiry (0x01|0x0001) status 0x00 ncmd 1
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 6C:40:08:8A:03:FB mode 1 clkoffset 0x68b1 class 0x3a010c rssi -64
+    Complete local name: 'Andrew...s MacBook Pro'
+    Complete service classes: 0x1101 0x1200 0x111f 0x1112 0x1116 0x1117 0x110a 0x110c
+    Unknown type 0xff with 17 bytes data
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 36
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Flags: 0x06
+      TX power level: 0
+      Unknown type 0x07 with 16 bytes data
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr E3:49:48:1C:4D:E6 (Random)
+      Complete local name: 'Adafruit Bluefruit LE'
+      RSSI: -63
+> HCI Event: LE Meta Event (0x3e) plen 35
+    LE Advertising Report
+      ADV_IND - Connectable undirected advertising (0)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      Flags: 0x06
+      Unknown type 0xff with 18 bytes data
+      RSSI: -66
+> HCI Event: LE Meta Event (0x3e) plen 12
+    LE Advertising Report
+      SCAN_RSP - Scan Response (4)
+      bdaddr 56:25:16:56:5B:57 (Random)
+      RSSI: -66
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 5C:E0:C5:F3:67:5D mode 1 clkoffset 0x7182 class 0x02010c rssi -56
+    Complete local name: 'SISSEL'
+    TX power level: 10
